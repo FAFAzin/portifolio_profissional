@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
         <header className='header' id='header'>
             <nav className='nav container'>
-                <Link to="/" className='nav__logo'>Josafá</Link>
+                <a href="#inicio" className='nav__logo'>Josafá</a>
 
                 <div onClick={handleLinkClick} className={navMenuVisible ? 'nav__menu show-menu' : 'nav__menu'} id='nav-menu'>
 
@@ -39,44 +39,44 @@ const Navbar = () => {
 
                         {/* Home icon */}
                         <li className='nav__item'>
-                            <Link to='/' className='nav__link active-link'>
+                            <a href='#inicio' className='nav__link active-link'>
                                 <BiHome className='nav__icon' /> Início
-                            </Link>
+                            </a>
                         </li>
 
                         {/* About Icon */}
                         <li className='nav__item'>
-                            <Link to="/about" className='nav__link'>
+                            <a href="#sobre" className='nav__link'>
                                 <BiUser className='nav__icon' /> Sobre
-                            </Link>
+                            </a>
                         </li>
 
                         {/* Skills Icon */}
                         < li className='nav__item'>
-                            <Link to="/skills" className='nav__link'>
+                            <a href="#skills" className='nav__link'>
                                 <BiFileBlank className='nav__icon' /> Skills
-                            </Link>
+                            </a>
                         </li>
 
                         {/* Services Icon */}
                         <li className='nav__item'>
-                            <Link to="/service" className='nav__link'>
+                            <a href="#service" className='nav__link'>
                                 <MdOutlineHomeRepairService className='nav__icon' /> Serviços
-                            </Link>
+                            </a>
                         </li>
 
                         {/* Portifólio Icon */}
                         <li className='nav__item'>
-                            <Link to="/portifolio" className='nav__link'>
+                            <a href="#portifolio" className='nav__link'>
                                 <MdOutlineInsertPhoto className='nav__icon' /> Portifólio
-                            </Link>
+                            </a>
                         </li>
 
                         {/* Contact Icon */}
                         <li className='nav__item'>
-                            <Link to="/contato" className='nav__link'>
+                            <a href="#contato" className='nav__link'>
                                 <TbSend className='nav__icon' /> Contato
-                            </Link>
+                            </a>
                         </li>
 
 
