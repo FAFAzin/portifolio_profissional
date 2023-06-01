@@ -18,14 +18,14 @@ const Home = () => {
                 {/* Icones rede social */}
                 <div className="home__content grid">
                     <div className="home__social">
-                        <Link to="https://linkedin.com" target="_blank" className="home__social-icon">
+                        <Link to="https://www.linkedin.com/in/josafa-silveira/" target="_blank" className="home__social-icon">
                             <FiLinkedin />
                         </Link>
-                        <Link to="https://www.instagram.com" target="_blank" className="home__social-icon">
+                        <Link to="https://www.instagram.com/josafa_silveira/?next=%2F" target="_blank" className="home__social-icon">
 
                             <FiInstagram />
                         </Link>
-                        <Link to="https://github.com" target="_blank" className="home__social-icon">
+                        <Link to="https://github.com/FAFAzin" target="_blank" className="home__social-icon">
                             <FiGithub />
                         </Link>
                     </div>
@@ -55,7 +55,7 @@ const Home = () => {
                     {/* Name and Information */}
                     <div className="home__data">
                         <h1 className="home__title">Olá, Eu sou Josafá</h1>
-                        <h3 className="home__subtitle">Desenvolvedor Frontend Jr</h3>
+                        <h3 className="home__subtitle">Frontend Jr</h3>
                         <p className="home__description">Experiência acadêmica como desenvolvedor de softwares focado em frontend</p>
                         <Link to="/contato" className="button button--flex">
                             Contate me <TbSend className='button__icon' />
