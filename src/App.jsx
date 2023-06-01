@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <div>
       <Navbar />
       <Main />
+      <Footer />
     </div>
   )
 }
