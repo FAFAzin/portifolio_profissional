@@ -4,22 +4,27 @@ import Home from '../Home'
 import About from '../About'
 import Skills from '../Skills'
 import Qualification from '../Qualification'
+import Portifolio from '../Portifolio'
+
 
 const Main = () => {
     return (
         <main>
-            <div>
+            <section>
                 <Home />
-            </div>
-            <div>
+            </section>
+            <section>
                 <About />
-            </div>
-            <div>
+            </section>
+            <section>
                 <Skills />
-            </div>
-            <div>
+            </section>
+            <section>
                 <Qualification />
-            </div>
+            </section>
+            <section>
+                <Portifolio />
+            </section>
         </main>
 
     )

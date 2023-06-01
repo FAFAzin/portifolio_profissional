@@ -4,6 +4,9 @@ import tabSkills from '../../assets/tabsSkills.js'
 /* Icons react */
 import { HiCode, HiOutlineServer } from 'react-icons/hi'
 import { BsChevronCompactDown } from 'react-icons/bs';
+import { BiChevronDown } from 'react-icons/bi'
+import Aprimorando from '../Novidades';
+
 
 
 const Skills = () => {
@@ -16,14 +19,14 @@ const Skills = () => {
             <div className="skills__container container grid">
                 {/* SKILLS 1 */}
                 <div>
-                    <div onClick={tabSkills} className="skills__content skills-open">
+                    <div onClick={tabSkills} className="skills__content skills__open">
                         <div className="skills__header">
                             <HiCode className='skills__icon' />
                             <div>
                                 <h1 onClick={tabSkills} className="skills__title">Desenvolvimento Frontend</h1>
                                 <span className="skills__subtitle">+07 meses</span>
                             </div>
-                            <BsChevronCompactDown className='skills__arrow' />
+                            <BiChevronDown className='skills__arrow' />
                         </div>
 
                         {/* Lista de Skills */}
@@ -72,14 +75,14 @@ const Skills = () => {
                     </div>
                 </div>
                 <div>
-                    <div onClick={tabSkills} className="skills__content skills-close">
+                    <div onClick={tabSkills} className="skills__content skills__close">
                         <div className="skills__header">
                             <HiOutlineServer className='skills__icon' />
                             <div>
                                 <h1 className="skills__title">Desenvolvimento Backend</h1>
                                 <span className="skills__subtitle">+02 meses</span>
                             </div>
-                            <BsChevronCompactDown className='skills__arrow' />
+                            <BiChevronDown className='skills__arrow' />
                         </div>
 
                         {/* Lista de Skills */}
@@ -98,8 +101,10 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+            <Aprimorando />
+
         </section >
-        
+
     );
 };
 

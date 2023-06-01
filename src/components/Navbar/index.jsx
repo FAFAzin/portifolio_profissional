@@ -5,8 +5,8 @@ import ActiveMenu from '../../assets/ActiveMenu.js';
 
 /* React Icons */
 import { BiHome, BiUser, BiFileBlank, BiGridAlt } from 'react-icons/bi';
-import { MdOutlineHomeRepairService, MdOutlineInsertPhoto } from 'react-icons/md';
-import { TbSend } from 'react-icons/tb';
+import { MdOutlineInsertPhoto } from 'react-icons/md';
+import { TbSend, TbSchool } from 'react-icons/tb';
 import { GrFormClose } from 'react-icons/gr';
 
 const Navbar = () => {
@@ -59,8 +59,8 @@ const Navbar = () => {
 
                         {/* Services Icon */}
                         <li className='nav__item'>
-                            <a href="#service" onClick={ActiveMenu} className='nav__link'>
-                                <MdOutlineHomeRepairService className='nav__icon' /> Serviços
+                            <a href="#qualification" onClick={ActiveMenu} className='nav__link'>
+                                <TbSchool className='nav__icon' /> Qualificação
                             </a>
                         </li>
 

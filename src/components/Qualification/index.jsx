@@ -10,7 +10,7 @@ import { LuCalendarDays } from 'react-icons/lu';
 import activateTab from '../../assets/tabsQualification.js';
 const Qualification = () => {
     return (
-        <section className="qualification section">
+        <section className="qualification section" id='qualification'>
             <h2 className="section__title">Qualificação</h2>
             <span className="section__subtitle">Qualificações e cursos</span>
 

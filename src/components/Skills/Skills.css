@@ -30,6 +30,7 @@
 
 .skills__title {
     font-size: var(--h3-font-size);
+    width: 30px;
 }
 
 .skills__subtitle {
@@ -109,3 +110,4 @@
 .skills__open .skills__arrow {
     transform: rotate(-180deg);
 }
+
