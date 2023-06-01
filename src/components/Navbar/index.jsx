@@ -1,7 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import './Navbar.css';
+
+import ActiveMenu from '../../assets/ActiveMenu.js';
 
 /* React Icons */
 import { BiHome, BiUser, BiFileBlank, BiGridAlt } from 'react-icons/bi';
@@ -10,7 +10,6 @@ import { TbSend } from 'react-icons/tb';
 import { GrFormClose } from 'react-icons/gr';
 
 const Navbar = () => {
-
     const [navMenuVisible, setNavMenuVisible] = useState(false);
 
     /* ===== Show and Hidden Menu */
@@ -26,7 +25,7 @@ const Navbar = () => {
         setNavMenuVisible(false);
     };
 
-
+    /* Criar função para marcar o icone selecionado */
 
     return (
         <header className='header' id='header'>
@@ -39,42 +38,42 @@ const Navbar = () => {
 
                         {/* Home icon */}
                         <li className='nav__item'>
-                            <a href='#inicio' className='nav__link active-link'>
+                            <a href='#inicio' onClick={ActiveMenu} className='nav__link active-link'>
                                 <BiHome className='nav__icon' /> Início
                             </a>
                         </li>
 
                         {/* About Icon */}
                         <li className='nav__item'>
-                            <a href="#sobre" className='nav__link'>
+                            <a href="#sobre" onClick={ActiveMenu} className='nav__link'>
                                 <BiUser className='nav__icon' /> Sobre
                             </a>
                         </li>
 
                         {/* Skills Icon */}
                         < li className='nav__item'>
-                            <a href="#skills" className='nav__link'>
+                            <a href="#skills" onClick={ActiveMenu} className='nav__link'>
                                 <BiFileBlank className='nav__icon' /> Skills
                             </a>
                         </li>
 
                         {/* Services Icon */}
                         <li className='nav__item'>
-                            <a href="#service" className='nav__link'>
+                            <a href="#service" onClick={ActiveMenu} className='nav__link'>
                                 <MdOutlineHomeRepairService className='nav__icon' /> Serviços
                             </a>
                         </li>
 
                         {/* Portifólio Icon */}
                         <li className='nav__item'>
-                            <a href="#portifolio" className='nav__link'>
+                            <a href="#portifolio" onClick={ActiveMenu} className='nav__link'>
                                 <MdOutlineInsertPhoto className='nav__icon' /> Portifólio
                             </a>
                         </li>
 
                         {/* Contact Icon */}
                         <li className='nav__item'>
-                            <a href="#contato" className='nav__link'>
+                            <a href="#contato" onClick={ActiveMenu} className='nav__link'>
                                 <TbSend className='nav__icon' /> Contato
                             </a>
                         </li>

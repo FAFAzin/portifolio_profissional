@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './About.css'
-import Foto from '../../img/about.jpg'
+import Foto from '../../img/sobre.png'
 
 import { AiOutlineCloudDownload } from 'react-icons/ai'
 
