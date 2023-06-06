@@ -28,7 +28,7 @@ const Navbar = () => {
     /* Criar função para marcar o icone selecionado */
 
     return (
-        <header className='header' id='header'>
+        <header className='header scroll-header' id='header'>
             <nav className='nav container'>
                 <a href="#inicio" className='nav__logo'>Josafá</a>
 
