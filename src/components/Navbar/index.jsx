@@ -38,7 +38,7 @@ const Navbar = () => {
 
                         {/* Home icon */}
                         <li className='nav__item'>
-                            <a href='#inicio' onClick={ActiveMenu} className='nav__link active-link'>
+                            <a href='#inicio' onClick={ActiveMenu} className='nav__link'>
                                 <BiHome className='nav__icon' /> Início
                             </a>
                         </li>
