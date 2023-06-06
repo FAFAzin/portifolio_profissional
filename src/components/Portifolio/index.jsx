@@ -12,7 +12,7 @@ import './Portifolio.css';
 
 
 /* imports images */
-import Image1 from '../../img/portfolio1.jpg'
+import Image1 from '../../img/portfolio1.png'
 import image2 from '../../img/portfolio2.jpg'
 
 /* icons react */
@@ -51,14 +51,14 @@ const Portifolio = () => {
                                         Site responsivo e moderno. A Organo facilita a organização da sua empresa.
                                     </p>
 
-                                    <a href="" className="button button--flex button--small portifolio__button">
+                                    <a href="https://organa-topaz.vercel.app/" target="_blank" className="button button--flex button--small portifolio__button">
                                         Demo
                                         <BsArrowRightShort className='button__icon' />
                                     </a>
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className="portifolio__content grid">
                                 <img src={image2} alt="" className="portifolio__img" />
 
@@ -74,11 +74,11 @@ const Portifolio = () => {
                                     </a>
                                 </div>
                             </div>
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                     </Swiper>
                     <div className="swiper-button-next">
                         <GrFormNext className='swiper-portifolio-icon' />
-                    </div> 
+                    </div>
                     <div className="swiper-button-prev">
                         <GrFormPrevious className='swiper-portifolio-icon' />
                     </div>

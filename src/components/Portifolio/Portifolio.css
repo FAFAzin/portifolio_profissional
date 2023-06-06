@@ -58,3 +58,38 @@
 .swiper-pagination-bullets {
     outline: none;
 }
+
+/* large devices */
+@media screen and (min-width: 760px) {
+
+    .portifolio__img {
+        width: 320px;
+    }
+
+    .portifolio__content {
+        align-items: center;
+    }
+}
+
+/* very large devices */
+@media screen and (min-width: 1024px) {
+    .portifolio__content {
+        column-gap: 5rem;
+    }
+
+    .swiper-portifolio-icon {
+        font-size: 3.5rem;
+    }
+
+    .swiper-button-prev {
+        left: -3.5rem;
+    }
+
+    .swiper-button-next {
+        right: -3.5rem;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: -4.5rem;
+    }
+}

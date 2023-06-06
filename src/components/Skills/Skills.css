@@ -111,3 +111,69 @@
     transform: rotate(-180deg);
 }
 
+/* Small mobile */
+@media screen and (max-width: 350px) {
+
+    .skills__title {
+        font-size: var(--normal-font-size);
+    }
+
+    .services__container {
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
+    .services__content {
+        padding-right: 3.5rem;
+    }
+
+    .services__modal {
+        padding: 0 .5rem;
+    }
+
+}
+
+/* large devices */
+@media screen and (min-width: 760px) {
+
+    .skills__header {
+        width: 350px;
+    }
+
+    .skills__icon {
+        font-size: 4rem;
+    }
+
+    .skills__arrow {
+        font-size: 1.5rem;
+    }
+
+    .skills__list grid{
+        display: grid;
+    }
+
+
+    .services__container {
+        grid-template-columns: repeat(3, 218px);
+        justify-content: center;
+    }
+
+    .services__icon {
+        font-size: 2rem;
+    }
+
+    .services__content {
+        padding: 6rem 0 2rem 2.5rem;
+    }
+
+    .services__modal-content {
+        width: 450px;
+    }
+}
+
+/* very large devices */
+@media screen and (min-width: 1024px) {
+    .services__container {
+        grid-template-columns: repeat(2, 235px);
+    }
+}

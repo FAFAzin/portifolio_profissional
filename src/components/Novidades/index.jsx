@@ -12,7 +12,7 @@ import { AiOutlineCheckCircle } from 'react-icons/ai'
 const Aprimorando = () => {
     return (
         <div className="services section">
-            <h2 className="section__title">Aprimorando</h2>
+            {/*  <h2 className="section__title">Aprimorando</h2> */}
             <span className="section__subtitle">O que tenho práticado no momento</span>
             < div className="services__container container grid" >
                 {/* <!--==================== SERVICES 1 ====================--> */}
@@ -37,11 +37,6 @@ const Aprimorando = () => {
                                     <AiOutlineCheckCircle className='services__modal-icon' />
                                     <p>Estilizando com tailwindcss</p>
                                 </li>
-
-                                <li className="services__modal-service">
-                                    <AiOutlineCheckCircle className='services__modal-icon' />
-                                    <p>Introduzindo ao Typescript</p>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -54,7 +49,7 @@ const Aprimorando = () => {
                         <h3 className="services__title">Backend</h3>
                     </div>
 
-                    <span className="button button--flex button--small button--link services__button">
+                    <span className="button  button--link services__button">
                         Ver mais
                         <HiOutlineArrowNarrowRight className='button__icon' />
                     </span>

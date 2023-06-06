@@ -87,7 +87,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">FIAP - Brasil</span>
                                 <div className="qualification__calendar">
                                     <LuCalendarDays className='qualification__icon' />
-                                    2021 - 2023
+                                    2021 - 2022
                                 </div>
                             </div>
                         </div>
@@ -95,10 +95,10 @@ const Qualification = () => {
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Introduction to Cybersecurity Tools & Cyber Attacks</h3>
-                                <span className="qualification__subtitle">IBM - Estados Unidos</span>
+                                <span className="qualification__subtitle">IBM - EUA</span>
                                 <div className="qualification__calendar">
                                     <LuCalendarDays className='qualification__icon' />
-                                    2021 - 2023
+                                    2021 - 2022
                                 </div>
                             </div>
 

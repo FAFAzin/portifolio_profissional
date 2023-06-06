@@ -11,6 +11,22 @@ import { TbSend } from 'react-icons/tb'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+    /* Função para acionar o direcionamento do cliente para o email */
+    const handleButtonClick = () => {
+        const emailAddress = 'josafajosina@gmail.com';
+        const subject = 'Olá vim pelo seu site';
+        const body = 'Insira sua mensagem';
+
+        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoLink;
+    };
+
+
+
+
+    /* Retorno a partir daqui */
     return (
         <section className="home section" id="inicio">
             <div className="home__container container grid">
@@ -18,7 +34,7 @@ const Home = () => {
                 {/* Icones rede social */}
                 <div className="home__content grid">
                     <div className="home__social">
-                        <Link to="https://www.linkedin.com/in/josafa-silveira/" target="_blank" className="home__social-icon">
+                        <Link to="https://www.linkedin.com/in/josafa-josina-silveira-dev" target="_blank" className="home__social-icon">
                             <FiLinkedin />
                         </Link>
                         <Link to="https://www.instagram.com/josafa_silveira/?next=%2F" target="_blank" className="home__social-icon">
@@ -55,20 +71,20 @@ const Home = () => {
                     {/* Name and Information */}
                     <div className="home__data">
                         <h1 className="home__title">Olá, Eu sou Josafá</h1>
-                        <h3 className="home__subtitle">Frontend Jr</h3>
-                        <p className="home__description">Experiência acadêmica como desenvolvedor de softwares focado em frontend</p>
-                        <Link to="/contato" className="button button--flex">
+                        <h3 className="home__subtitle">Desenvolvedor Frontend Jr</h3>
+                        <p className="home__description">Experiência com desenvolvimento de software focado em frontend.</p>
+                        <Link onClick={handleButtonClick} to="/contato" className="button button--flex">
                             Contate me <TbSend className='button__icon' />
                         </Link>
                     </div>
                     {/* Scroll small */}
-                    <div className="home__scroll">
-                        <Link to="/about" className="home__scroll-button button--flex">
-                            <span className="home__scroll-name"> Role para baixo </span>
-                            <AiOutlineArrowDown className='home__scroll-arrow' />
-                        </Link>
-                    </div>
                 </div>
+            </div>
+            <div className="home__scroll">
+                <a href="#sobre" className="home__scroll-button button--flex">
+                    <span className="home__scroll-name"> Role para baixo </span>
+                    <AiOutlineArrowDown className='home__scroll-arrow' />
+                </a>
             </div>
         </section >
     )

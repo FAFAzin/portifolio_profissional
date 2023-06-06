@@ -190,6 +190,7 @@ img {
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    
 }
 
 .button:hover {
@@ -209,11 +210,8 @@ img {
     font-size: 1.1rem;
     margin-left: var(--mb-0-5);
     transition: .5s;
-}
+   
 
-.button--flex {
-    display: inline-flex;
-    align-items: center;
 }
 
 .button--small {
@@ -229,4 +227,73 @@ img {
 .button--link:hover {
     background-color: transparent;
     color: var(--first-color-alt);
+}
+
+/* Small mobile */
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}
+
+/* Medium mobile */
+
+@media screen and (min-width: 568px) {
+
+    .about__container,
+    .skills__container,
+    .portifolio__content,
+    .project__container,
+    .contact__container,
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* large devices */
+@media screen and (min-width: 760px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+
+    .section__subtitle {
+        margin-bottom: 4rem;
+    }
+
+    .header {
+        top: 0;
+        bottom: initial;
+    }
+
+    .header,
+    .main {
+        padding: 0 1rem;
+    }
+
+    .change-theme {
+        margin: 0;
+    }
+
+
+
+}
+
+/* very large devices */
+@media screen and (min-width: 1024px) {
+
+    .header,
+    .main,
+    .footer__container {
+        padding: .1rem;
+    }
 }

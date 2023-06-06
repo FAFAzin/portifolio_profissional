@@ -37,3 +37,58 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (min-width: 540px){
+    .about__description {
+        text-align: initial;
+        margin-bottom: 1rem;
+    }
+    .about__img {
+        width: 300px;
+        border-radius: .5rem;
+        justify-self: center;
+        align-self: center;
+    
+    }
+    .about__info {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom:5px;
+    }
+
+    .about__buttons{
+        margin-top: 10px;
+    }
+
+}
+
+/* large devices */
+@media screen and (min-width: 760px) {
+    .about__container {
+        column-gap: 5rem;
+        margin-top: 10rem;
+    }
+
+    .about__img {
+        width: 400px;
+        margin-right: 1rem;
+    }
+
+    .about__description {
+        text-align: initial;
+        margin-bottom: 0;
+    }
+
+    .about__info {
+        justify-content: space-between;
+        margin: 1rem;
+    }
+
+    .about__buttons {
+        justify-content: center;
+    }
+
+    .space {
+        margin-top: 15rem;
+    }
+}

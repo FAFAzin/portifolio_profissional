@@ -45,6 +45,33 @@
     margin-top: var(--mb-3);
 }
 
+/* large devices */
+
+@media screen and (min-width: 760px) {
+
+    .footer__container {
+        padding: 0 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__bg {
+        padding: 3rem 0 3.5rem;
+    }
+
+    .footer__link {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .footer__socials {
+        justify-self: flex-end;
+    }
+
+    .footer__copy {
+        margin-top: 4.5rem;
+    }
+}
+
 /* .footer__title,
 .footer__subtitle,
 .footer__link,
